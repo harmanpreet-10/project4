@@ -1,0 +1,303 @@
+/*---
+PROJECT 4
+NAME: HARAMNPREET KAUR
+PROJECT 4
+DATE: 21-04-2026
+Description: PORTFOLIO WEBSITE
+-----*/
+
+
+/* Reset default spacing and set a common font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main body styling with background image */
+body {
+  background-image: url('background.jpg'); /* background image */
+  background-size: cover; /* fill whole screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* stays while scrolling */
+  min-height: 100vh;
+  color: white;
+  overflow-y: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark overlay on background for better text visibility */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark transparent layer */
+  z-index: -1;
+}
+
+/* Header section */
+header {
+  padding: 20px 50px;
+}
+
+/* Title in header */
+header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Navigation links on top right */
+nav {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+/* Styling nav links */
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Hover effect for nav links */
+nav a:hover {
+  color: slateblue;
+}
+
+/* Center content section */
+#content {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Box inside content */
+#content div {
+  background: rgba(0, 0, 0, 0.5); /* semi transparent box */
+  padding: 40px 60px;
+  border-radius: 5px;
+}
+
+/* Main heading */
+#content h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+#content p {
+  font-size: 16px;
+  color: #ddd;
+  max-width: 500px;
+}
+
+/* Footer at bottom */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+  color: #aaa;
+}
+
+/* Main section layout */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  padding: 0 50px;
+}
+
+/* Headings inside main */
+main h2 {
+  font-size: 40px;
+  white-space: nowrap;
+}
+
+main h3 {
+  font-size: 20px;
+}
+
+/* Paragraph inside main */
+main p {
+  max-width: 400px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Profile section layout */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* Profile image styling */
+.profile-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* makes circle */
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+/* Small images in article */
+article img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-top: 10px;
+}
+
+/* Align h3 content in center */
+#content h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Services layout (cards side by side) */
+.services-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* wrap on smaller screens */
+  margin-top: 20px;
+}
+
+/* Contact section center */
+.contact-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 50px;
+}
+
+/* Form box styling */
+.form1 {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+}
+
+/* Space between form inputs */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Input and textarea styling */
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #333;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Buttons side by side */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* General button style */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Submit button color */
+.btn-submit { 
+  background-color: #007bff; 
+  color: white; 
+}
+
+/* Reset button color */
+.btn-reset { 
+  background-color: #6c757d; 
+  color: white; 
+}
+
+/* Navigation container alignment */
+#navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* About section card */
+.about-card {
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  display: block;
+}
+
+/* About section headings */
+.about-card h1 {
+  font-size: 14px;
+  border-bottom: 2px solid lightslategrey;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* About text */
+.about-card p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* About image */
+.about-img img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+/* Text next to profile image */
+.profile-text {
+  display: flex;
+  flex-direction: column;
+}

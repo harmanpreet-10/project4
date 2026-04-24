@@ -1,0 +1,98 @@
+<!----
+PROJECT 4
+NAME: HARMANPREET KAUR
+DATE: 21-04-2026
+Description: Portfolio Website
+----->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- link to css file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- page title -->
+    <title>Contact - My Portfolio</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <h1>Contact Me</h1>
+    </header>
+
+    <!-- navigation menu -->
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- main contact section -->
+    <main id="content" class="contact-me">
+
+        <!-- form box -->
+        <div class="form1">
+            <h2>Get in Touch</h2>
+            <p>Have a project in mind? Send me a message!</p>
+
+            <!-- contact form -->
+            <form action="contact.html" method="post" id="contactForm">
+
+                <!-- name input -->
+                <div class="form-group">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" style="width: 100%; padding: 8px;">
+                </div>
+
+                <br>
+
+                <!-- phone input -->
+                <div class="form-group">
+                    <label for="phone">Phone Number (10 digits):</label><br>
+                    <input type="text" id="phone" name="phone" maxlength="10" style="width: 100%; padding: 8px;">
+                </div>
+
+                <br>
+
+                <!-- email input -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" style="width: 100%; padding: 8px;">
+                </div>
+
+                <br>
+
+                <!-- comments textarea -->
+                <div class="form-group">
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" style="width: 100%; padding: 8px;"></textarea>
+                </div>
+
+                <br>
+
+                <!-- buttons -->
+                <div class="button-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <p>&copy; 2026 My Web Project</p>
+    </footer>
+
+    <!-- js file for validation -->
+    <script src="script.js"></script>
+
+</body>
+</html>
